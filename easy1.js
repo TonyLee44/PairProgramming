@@ -14,6 +14,6 @@ for (y=0; y<x.length; y++){
         oddNum.push(x[y])
     }
 }
-console.log(oddNum);
-console.log(evenNum);
+console.log(`Even numbers: ${evenNum}`);
+console.log(`Odd numbers: ${oddNum}`);
 }

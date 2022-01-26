@@ -1,40 +1,27 @@
-/*const prime = [];
-const notPrime=[];
-const input = [27, 49, 113, 96, 51, 79, 118,007]
+const input = [10, 18, 19, 29, 33, 35, 47, 66, 83] 
+const prime = [];
 
+function checkPrime(number) {
+    if (number <= 1) {
+      return false;
+    } else {
+      for (let i = 2; i < number; i++) {
+        if (number % i == 0) {
+          return false;
+        }
+      }
+      return true;
+    }
+  }
 
-
-function isItPrime (x) {
-
-
-    for (y=0; y<x.length; y++){
-
-           /* if (x[y]%2==0 && x[y]!=2){
-                notPrime.push(x[y])
-               
-            }
-            else if (x[y]%z==0){
-                notPrime.push(x[y])
-            }
-            else{
-                z++
-            }
-        }*/
-
-        /*while (z<x[y]){
-            var z=2;
-            if (x[y]%z==0 && x[y]!=2){
-                notPrime.push(x[y])
-                z++}
-            else
-            {
-            z++
-            }
+  function primeNum (array) {
+    for (i = 0; i < array.length; i++) {
+        const isPrime = checkPrime(array[i]);
+        if(isPrime) {
+            prime.push(array[i]);
         }
     }
-  console.log(notPrime);
-  console.log(prime);
-}
+  }
 
-isItPrime(input);
-*/
+primeNum(input);
+console.log(prime);

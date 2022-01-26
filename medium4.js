@@ -1,33 +1,33 @@
 class Car  
 {
- constructor (Color, Year, Make, Model, Milage)
+ constructor (Color, Year, Make, Model, Mileage)
  {   
      this.color=Color;
      this.year=Year;
      this.make=Make;
      this.model=Model;
-     this.milage=Milage;
+     this.mileage=Mileage;
  }
 
  driveToWork()
  {
-     this.milage+=33;
-     console.log(`Your car is a ${this.color} ${this.year} ${this.make} ${this.model}. Here is the milage: Old mileage: ${this.milage-33} | New mileage: ${this.milage}`)
-     return this.milage;
+     this.mileage+=33;
+     console.log(`Your car is a ${this.color} ${this.year} ${this.make} ${this.model}. Here is the mileage: Old mileage: ${this.mileage-33} | New mileage: ${this.mileage}`)
+     return this.mileage;
  }
 
  driveAroundTheWorld()
  {
-    this.milage+= 24000;
-    console.log(`Your car is a ${this.color} ${this.year} ${this.make} ${this.model}. Here is the milage: Old mileage: ${this.milage-24000} | New mileage: ${this.milage}`)
-    return this.milage;
+    this.mileage+= 24000;
+    console.log(`Your car is a ${this.color} ${this.year} ${this.make} ${this.model}. Here is the mileage: Old mileage: ${this.mileage-24000} | New mileage: ${this.mileage}`)
+    return this.mileage;
  }
  
 runErrands()
 {
-    this.milage+= 30;
-    console.log(`Your car is a ${this.color} ${this.year} ${this.make} ${this.model}. Here is the milage: Old mileage: ${this.milage-30} | New mileage: ${this.milage}`)
-    return this.milage;
+    this.mileage+= 30;
+    console.log(`Your car is a ${this.color} ${this.year} ${this.make} ${this.model}. Here is the mileage: Old mileage: ${this.mileage-30} | New mileage: ${this.mileage}`)
+    return this.mileage;
 }
 
 }
@@ -44,12 +44,12 @@ let make=window.prompt("Please type in your car's make.");
 
 let model=window.prompt("Please type in your car's model.");
 
-let milage=parseFloat(window.prompt("Please type in your car's milage"));
-    while(isNaN(milage)===true)
+let mileage=parseFloat(window.prompt("Please type in your car's mileage"));
+    while(isNaN(mileage)===true)
     {
-        milage=window.prompt("Error! You did not type in a valid number! Please Try again")
+        mileage=window.prompt("Error! You did not type in a valid number! Please Try again")
     }
 
-var car=new Car(color,year, make, model, milage);
+var car=new Car(color,year, make, model, mileage);
 
 car.runErrands();

@@ -2,8 +2,8 @@
 
 const str2= "'That's one small step for man, one giant leap for mankind.' -- Neil A. Armstrong"*/
  
-const str = window.prompt("Type you're first phrase");
-const str2= window.prompt("Type your second phrase");
+const str = window.prompt("Type your first phrase: ");
+const str2= window.prompt("Type your second phrase: ");
 
 
 function backer(str, str2){

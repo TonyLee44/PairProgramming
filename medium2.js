@@ -39,7 +39,6 @@ if (str3.toString()===str4.toString())
 }
 else
 {
-    z=false 
     alert("Looks like the phrases you typed aren't anagrams.")
 }
 

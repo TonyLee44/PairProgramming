@@ -1,11 +1,11 @@
-const prime = [];
+/*const prime = [];
 const notPrime=[];
-const input = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const input = [27, 49, 113, 96, 51, 79, 118,007]
 
 
 
 function isItPrime (x) {
-    var z=2;
+
 
     for (y=0; y<x.length; y++){
 
@@ -21,10 +21,20 @@ function isItPrime (x) {
             }
         }*/
 
+        /*while (z<x[y]){
+            var z=2;
+            if (x[y]%z==0 && x[y]!=2){
+                notPrime.push(x[y])
+                z++}
+            else
+            {
+            z++
+            }
+        }
+    }
   console.log(notPrime);
   console.log(prime);
 }
 
 isItPrime(input);
-
-}
+*/
